@@ -198,5 +198,12 @@
         "image3": "guo_zengqi_03.jpg",
         "image4": "guo_zengqi_04.jpg",
         "image5": "<iframe src='https://player.vimeo.com/video/482162664' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+    },
+    {
+        "name": "Zoë Pulley",
+        "class": "2023",
+        "title": "Some App Letters",
+        "descrip": "The manipulation of an environment (phone home screen) to form an alphabet.  ",
+        "hero": "Pulley_Zoe_01.gif"
     }
 ]
