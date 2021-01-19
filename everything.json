@@ -1,0 +1,202 @@
+[
+
+    {
+        "name": "Caroline Robinson Smith",
+        "class": "2020",
+        "title": "In Flux",
+        "descrip": "In Flux is documentation of the body of work I created during my MFA program at RISD. The book is non-linear and is structured based on a Matrix of relations that can be found on the cover (also the table of contents.) The relationship of elements that permeate my design processes behaves more like a gradient than a hierarchy and the book is structured to reflect this fluidity. From a distance, all the individual colors in a gradient are still apparent and visible but they still all relate to one another. They are part of a larger system living together in a state transition and response.",
+        "hero": "RobinsonSmith_Caroline_01.gif",
+        "image2": "RobinsonSmith_Caroline_02.jpg",
+        "image3": "RobinsonSmith_Caroline_03.png"
+    },
+    {
+        "name": "Daphne Hsu",
+        "class": "2021",
+        "title": "Pool v1",
+        "descrip": "Foam noodles, bent and stretched into letterforms, floating on the surface of a pool.",
+        "hero": "hsu_daphne_01.gif",
+        "image2": "hsu_daphne_02.gif"
+    },
+    {
+        "name": "Elena Foraker",
+        "class": "2020",
+        "title": "Flirty-sweet-perfect-sensual-fun-confident- feminine-fantasy.com",
+        "descrip": "I have always been intrigued by the business of online perfume sales. Who would risk buying a new scent without being able to actually smell it first? Perfume marketing is selling an idealized image of femininity. This website is a karaoke-like continuous scroll of 41 descriptions of perfumes released by female pop stars. Each one is also a hyperlink so the user can easily purchase the perfume online.",
+        "hero": "foraker_elena_01.png",
+        "link": "http://flirty-sweet-perfect-sensual-fun-confident-feminine-fantasy.com/"
+    },
+    {
+        "name": "Emily Guez & Hilary duPont",
+        "class": "2020",
+        "title": "Strange Gifts",
+        "descrip": "Strange Gifts takes the reader on a journey through various cities in New England. We explore the history and legacy of the region through a critical and humorous design lens, looking at the way issues of trade, money, and gender were all shaped by these small towns’ pasts. Our first person stories of traveling through these towns is mixed with the factual details we encounter on the way, making the past feel contemporary.\nThe 32-page publication can be read in two ways: as a newspaper, or, when taken apart and hung on the wall, as a traveling paper-based exhibition.",
+        "hero": "Guez_Emily_01.png",
+        "image2": "Guez_Emily_02.png",
+        "image3": "Guez_Emily_03.png",
+        "image4": "<iframe src='https://player.vimeo.com/video/501327506' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+        "image5": "Guez_Emily_05.png"
+    },
+
+    {
+        "name": "Forough Abadian",
+        "class": "2022",
+        "title": "Beauty/Taste/Style",
+        "descrip": "The articles in this book are attempt/ed to maintain the notion of beauty and design as a conversation in the professional and the academic realm. Developing strong content is essential for graphic designers, especially for MFA students. However, presenting that content through an appropriate vessel that looks intriguing and engaging is equally important. It is crucial to actively investigate, question, and reflect on the appearance of what we present to the rest of the world. Unlike other matters in life and work, our audience assesses the value of our design by its appearance.   ",
+        "hero": "Abadian_Forough_01.gif",
+        "image2": "Abadian_Forough_02.jpg",
+        "image3": "Abadian_Forough_03.jpg",
+        "image4": "Abadian_Forough_04.jpg",
+        "image5": "Abadian_Forough_05.jpg"
+    },
+    {
+        "name": "Georgie Nolan",
+        "class": "2021",
+        "title": "HYPERLAND",
+        "descrip": "This four part video series traces the influence of historical events that link technology and political power in visual fiction speculation  about the future and how, in turn, the influence of these fictions has  subsequently manifested in the real world. Completing the continuous feedback loop these manifestations, now themselves part of the historical record, become fact and are the basis for the next iteration of the visual media’s speculation on the future. The series uses the original Disney theme parks to separate its content to cover four separate topics.",
+        "hero": "Nolan_Georgie_01.jpg",
+        "image2": "<iframe src='https://player.vimeo.com/video/498270165' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+    },
+    {
+        "name": "Ilhee Park",
+        "class": "2022",
+        "title": "Visibility",
+        "descrip": "Visibility was created in a 2020 Graduate Type 3 class. It is derived from the text ‘Six Memos for the Next Millennium’ by Italo Calvino. Inspired by the motion of wiping the window, I created a conceptual image using multiple layers of typography that looks blurry outside the window.",
+        "hero": "Park_Ilhee_01.jpg",
+        "image2": "<iframe src='https://player.vimeo.com/video/501325184' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+    },
+    {
+        "name": "Ingrid Schmaedecke",
+        "class": "2022",
+        "title": "El Lissitzky Essays on Type",
+        "descrip": "Double-book project for two essays by El Lissitzky, originally published in 1925.\nThe book features a red circle shared between pages to indicate which ones should be open together.\nEditorial project for Graduate Typography III, Fall 2020, at RISD, taught by Doug Scott.",
+        "hero": "schmaedecke_ingrid_01.jpg",
+        "image2": "<iframe src='https://player.vimeo.com/video/495038574' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+    },
+    {
+        "name": "Jenni Oughton",
+        "class": "2023",
+        "title": "The Future in Font",
+        "descrip": "Space theme posters for Grad Type 1 exploring the uses of Peignot Groovy, a typeface  based on Peignot, designed for the class.",
+        "hero": "jennifer_oughton_01.jpg",
+        "image2": "jennifer_oughton_02.jpg",
+        "image3": "jennifer_oughton_03.jpg",
+        "image4": "jennifer_oughton_04.jpg",
+        "image5": "jennifer_oughton_05.jpg"
+    },
+    {
+        "name": "Kit Son Lee",
+        "class": "2021",
+        "title": "Phraktur Leet",
+        "descrip": "Phraktur Leet is a Fraktur (referring to its use by white nationalists) \nthat interpolates from Latin to Leet, a system of modified spellings \nfrequently found in gaming communities. The messy interpolation \nillustrates how the mainstream public couldn’t connect 2014's GamerGate \nand the Alt-Right, largely due to their harassment campaigns being \ncoordinated across fragmented channels. Even when the typeface is \n“clean” on either end, the Latin is a super display, and leet \northography is intentionally difficult to read, reflecting the \nillegibility of gamer and Alt-Right spaces to the general public.",
+        "hero": "Lee_KitSon_01.gif",
+        "image2": "Lee_KitSon_02.gif",
+        "image3": "Lee_KitSon_03.jpg",
+        "image4": "Lee_KitSon_04.jpg"
+    },
+    {
+        "name": "Lai Xu",
+        "class": "2021",
+        "title": "Not a Knot ",
+        "descrip": "Not a Knot is an inquiry into form, value, and ownership through a repetitive and self-referential process. The Matthew Walker knot, which was the chosen object, has lost its value of functionality in the contemporary context. It leads to a paradoxical relationship between form and value—physical structure of this knot has been transformed from a rope to a knot, to a 3D scanned mod-el that lives in a computer digitally, to a tangible output from a 3D printer. Therefore, the value of this knot has dramatically changed.",
+        "hero": "Xu_Lai_01.jpg"
+    },
+    {
+        "name": "Laura de Baldeon",
+        "class": "2021",
+        "title": "International US Roadtrip",
+        "descrip": "The word 'Roadtrip' spelled with US roads provides an opportunity for an imaginary journey, highlighting not only the connections the roads allow between towns, but also those that the US has with places around the world. The US locations and the international ones they are named after appear alongside each other in a Google Maps bubble, creating a sort of third place that traverses space and time. ",
+        "hero": "deBaldeon_Laura_01.jpg"
+    },
+    {
+        "name": "Lizzie Baur",
+        "class": "2020",
+        "title": "Temporal Collisions",
+        "descrip": "MFA Thesis synthesizing a body of work produced over the course of the program. A mix of project documentation, research, writing and interview. This book articulates a methodology and affinity for confusion and noise, gleaning, getting lost, temporal collisions and play.\nBook Design, 2020 228 pages, 7.25 x 10 in.",
+        "hero": "baur_lizzie_01.jpg",
+        "image2": "baur_lizzie_02.jpg",
+        "image3": "baur_lizzie_03.jpg",
+        "image4": "baur_lizzie_04.jpg",
+        "image5": "baur_lizzie_05.jpg"
+    },
+    {
+        "name": "Louis Rakovich",
+        "class": "2022",
+        "title": "Dreamlike",
+        "descrip": "Concept, design and UX prototype for Dreamlike, a dream journal app that taps into our dreaming world as an access point to better self-understanding and mental well-being. Dreamlike offers simple and intuitive dream journaling, personalized analysis of dream, sleep and mood patterns and recurring dream themes, and social connection with existing friends or other users through journal entry sharing and analysis comparison.",
+        "hero": "rakovich_louis_01.gif",
+        "image2": "rakovich_louis_02.jpg",
+        "image3": "rakovich_louis_03.gif",
+        "image4": "rakovich_louis_04.jpg",
+        "image5": "rakovich_louis_05.jpg",
+        "link": "https://www.louisrakovich.com/design/dreamlike"
+    },
+    {
+        "name": "Mina Kim",
+        "class": "2023",
+        "title": "Transport Accelerated",
+        "descrip": "Transport Accelerated is a font design inspired by Transport, the typeface for British road signs. To portray the accelerated motions on highways, the letters were duplicated, distributed, then merged like animation frames.",
+        "hero": "kim_mina_01.jpg",
+        "image2": "kim_mina_02.jpg",
+        "image3": "kim_mina_03.jpg",
+        "image4": "kim_mina_04.jpg",
+        "image5": "kim_mina_05.jpg"
+    },
+    {
+        "name": "Nick King Larson",
+        "class": "2022",
+        "title": "Post Haas",
+        "descrip": "Post Haas is an in progress attempt to interrogate the familiarity and “correctness” of Swiss Type. Post Haas is a variable font file that slides along an axis of unfamiliarity.",
+        "hero": "larson_nick_01.jpg",
+        "image2": "larson_nick_02.jpg",
+        "image3": "larson_nick_03.jpg"
+    },
+    {
+        "name": "Qiwen Ju",
+        "class": "2022",
+        "title": "Conditional Design",
+        "descrip": "As we all know, Chinese characters are transformed from graphics and we call them hieroglyphs. After thousands of years of historical precipitation, the Chinese have gradually formed its own system from early graphics. And in the whole system, the most important thing is the stroke.\nIn this project, we will create a brand-new Chinese character by using strokes as a starting point and through the strokes randomly selected by the audience, and find the balance in the structure through the creation process.",
+        "hero": "ju_qiwen_01.jpg",
+        "image2": "<iframe src='https://player.vimeo.com/video/501327291' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+    },
+    {
+        "name": "Ryan Diaz",
+        "class": "2021",
+        "title": "Slow Dance With Me",
+        "descrip": "Slow Dance With Me is an installation, a series of videos, and long exposure photographs swirling around concepts of intimacy, delay, and release. Traditional slow dance songs play in a small, dark room staged with a disco ball, randomly interrupted with projected videos. The space encourages participants to reflect on their own experiences with intimacy and perhaps slow dance themselves. Touch, proximity, and swaying together interrupts the pace of life and our alienation from others. How can lingering contact encourage slowness in the face of perpetual loss? ",
+        "hero": "diaz_ryan_04.jpg",
+        "image2": "<iframe src='https://player.vimeo.com/video/482197246' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+        "image3": "diaz_ryan_02.jpg",
+        "image4": "<iframe src='https://player.vimeo.com/video/484941766' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+        "image5": "<iframe src='https://player.vimeo.com/video/486217257' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+    },
+    {
+        "name": "Yingxi Ji",
+        "class": "2022",
+        "title": "Richard Sapper & El Lissitkzy",
+        "descrip": "Richard Sapper & El Lissitzky' is a book that features Germany industrial designer Richard Sapper's product design works how successfully being used of El Lissitkzy's typography rules in more than a 2D space. You can also specifically see how a lot of diagonal lines, vertical lines, curves travels in spaces in Richard Sapper's work smartly.",
+        "hero": "Ji_Yingxi_01.gif",
+        "image2": "Ji_Yingxi_02.gif"
+    },
+    {
+        "name": "Zachary Scheinfeld",
+        "class": "2023",
+        "title": "Albertus Modification ",
+        "descrip": "Albertus Modification is a type specimen booklet that explores the story of Berthold Wolpe and his experience designing Albertus as a Jewish refugee of Nazi Gemany. I explored the font’s quality of (and perhaps Wolpe’s desire to) “fitting in” with its German influence, despite the culture’s growing hostility towards the designer’s heritage. The booklet connects Wolpe’s story with themes from the Jewish holiday of Passover: the importance of fighting for your freedom, and the contrast between living in a place where you are not accepted, as opposed to a place where you are welcomed.",
+        "hero": "Scheinfeld_Zachary_01.jpg",
+        "image2": "Scheinfeld_Zachary_02.jpg",
+        "image3": "Scheinfeld_Zachary_03.jpg",
+        "image4": "Scheinfeld_Zachary_04.jpg",
+        "image5": "Scheinfeld_Zachary_05.jpg"
+    },
+    {
+        "name": "Zengqi Guo",
+        "class": "2022",
+        "title": "Serendipity Re: to the Golden Record",
+        "descrip": "This project is an alien language that I imagined. The inspiration comes from how aliens will respond to The Golden Record. To explore more possibilities in contemporary typography, we need to extend the scope of design to a broader writing system. By getting rid of the existing letterforms' constraints, it is possible to extract some new forms as inspirations from the future or the places we never had a chance to know.\nTypeface designed in Grad Typography 1 in fall 2019 and video created in Design in Posthuman Age by Anastasiia Raina in fall 2020.",
+        "hero": "guo_zengqi_01.jpg",
+        "image2": "guo_zengqi_02.jpg",
+        "image3": "guo_zengqi_03.jpg",
+        "image4": "guo_zengqi_04.jpg",
+        "image5": "<iframe src='https://player.vimeo.com/video/482162664' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+    }
+]
