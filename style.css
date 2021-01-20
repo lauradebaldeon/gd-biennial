@@ -40,7 +40,6 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    -webkit-overflow-scrolling:touch;
 }
 
 /* ————————navigation styles————————— */
@@ -149,7 +148,6 @@ body {
     backface-visibility: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    touch-action: pan-down;
     scrollbar-width: none;
 }
 
@@ -631,6 +629,16 @@ h2 {
 
 @media screen and (max-device-width:768px), screen and (max-width:768px) {
 
+  .grid {
+    height:100%;
+    width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   .grid_element.active{
     -webkit-overflow-scrolling: touch;
     touch-action: pan-down;
@@ -694,7 +702,7 @@ h2 {
   }
 
   .grid_element {
-    max-width: 50%;
+    width: 50%;
     flex: 1 0 50%;
   }
 
