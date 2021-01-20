@@ -148,6 +148,7 @@ body {
     backface-visibility: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    touch-action: auto;
     scrollbar-width: none;
 }
 
@@ -624,13 +625,7 @@ h2 {
 
 @media screen and (max-device-width:768px), screen and (max-width:768px) {
 
-  .grid_element.active {
-    height: max-content;
-  }
 
-  .work_container {
-    height: max-content;
-  }
 
   .desk {
     display: none;
