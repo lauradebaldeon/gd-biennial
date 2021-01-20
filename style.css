@@ -627,7 +627,7 @@ h2 {
   .grid_element.active {
     max-width: 100%;
     flex: 1 0 100%;
-    height: auto;
+    height: max-content;
     border: none;
     cursor: default;
   }
