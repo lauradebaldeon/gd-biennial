@@ -148,7 +148,7 @@ body {
     backface-visibility: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    touch-action: auto;
+    touch-action: pan-y;
     scrollbar-width: none;
 }
 
