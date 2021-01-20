@@ -667,9 +667,10 @@ h2 {
   
 
   .close {
-    font-size: 30px;
+    font-size: 50px;
     left: calc(100% - 30px);
-    top: 2px;
+    top: 10px;
+    background-color:white;
   }
 
   .scroll-graphic{
