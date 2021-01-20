@@ -148,7 +148,7 @@ body {
     backface-visibility: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    touch-action: pan-y;
+    touch-action: pan-down;
     scrollbar-width: none;
 }
 
@@ -208,6 +208,9 @@ body {
   height: 100%;
   border: none;
   cursor: default;
+  touch-action: pan-down;
+  -webkit-overflow-scrolling: touch;
+
 }
 
 .grid_element.inactive {
@@ -232,6 +235,8 @@ body {
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  touch-action: pan-down;
+  -webkit-overflow-scrolling: touch;
 }
 
 .hero {
