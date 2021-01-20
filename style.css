@@ -637,15 +637,6 @@ h2 {
   }
   
   .work_container {
-    width: 100%;
-    height: max-content;
-    text-align: center;
-    display: block;
-    /* position: relative; */
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
     -webkit-overflow-scrolling: touch;
     touch-action: pan-down;
 }
