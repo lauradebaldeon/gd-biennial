@@ -629,6 +629,12 @@ h2 {
 }
 
 @media screen and (max-device-width:768px), screen and (max-width:768px) {
+
+  .grid_element.active{
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-down;
+    height:max-content;
+  }
   
   .work_container {
     width: 100%;
@@ -640,6 +646,8 @@ h2 {
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-down;
 }
 
 
