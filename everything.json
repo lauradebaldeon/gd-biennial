@@ -1,4 +1,15 @@
 [
+    {
+        "name": "Bobby Joe Smith III",
+        "class": "2020",
+        "title": "U+16E99: Unsettling Grammars or Artifactual Obfuscation",
+        "descrip": "U+16E99: Unsettling Grammars Or Artifactual Obfuscation is the fourth installment of my graphic design thesis on Black and Indigenous decolonial grammars. The project was submitted to the 2020 RISD Grad Show, an annual event and institutional milestone for graduating RISD MFA candidates. Postponed and restructured due to the COVID-19 pandemic, many students were unwilling or unable to submit work to the exhibition, drawing into question the relevance of a show so few could safely access as well as the institutional demands for labor and productivity even in times of great physical and financial peril. Accessibility, exploitation, and disregard for others’ well-being are long-standing issues in academia, archives, museums, and the art and design world. The deadly global pandemic, violent systemic racism, and the crisis of leadership within institutions only rendered these issues in sharper contrast.</p><p>The contextual frame of the 2020 RISD Grad Show seemed an appropriate backdrop for my thesis, which uses design to resist the extractive practices of neoliberal institutions. Art and academic institutions desire access to and ownership of the Black and Indigenous “other,” but have neither the will nor the ability to nurture Black and Indigenous people, knowledge, or socio-political movements. As a Black and Indigenous designer working to further decolonial movements, questions of how to navigate my relationship with colonial institutions like RISD shape my work.</p><p>U+16E99: Unsettling Grammars Or Artifactual Obfuscation presents the decolonial grammars of my research without definition or explication. The grammars are projected on two woven blankets—“artifacts”—which contain metadata concerning their use, but bear no memory of the Black and Indigenous knowledge it held. Illegibility and (un)memory are here articulated as poetic acts of refusal. Access, possession, and exploitation of Black and Indigenous knowledge desired by the institution are evaded without complete omission or disengagement. U+16E99: Unsettling Grammars Or Artifactual Obfuscation fulfills the requirements of the institution, allowing me to secure the benefits of my engagement while mitigating colonial relationships to the work.",
+        "hero": "smith_bobbyjoe_01.jpg",
+        "image2": "smith_bobbyjoe_02.jpg",
+        "image3": "smith_bobbyjoe_03.jpg",
+        "image4": "smith_bobbyjoe_04.jpg",
+        "image5": "smith_bobbyjoe_05.jpg"
+    },
 
     {
         "name": "Caroline Robinson Smith",
@@ -29,12 +40,22 @@
         "name": "Emily Guez & Hilary duPont",
         "class": "2020",
         "title": "Strange Gifts",
-        "descrip": "Strange Gifts takes the reader on a journey through various cities in New England. We explore the history and legacy of the region through a critical and humorous design lens, looking at the way issues of trade, money, and gender were all shaped by these small towns’ pasts. Our first person stories of traveling through these towns is mixed with the factual details we encounter on the way, making the past feel contemporary.\nThe 32-page publication can be read in two ways: as a newspaper, or, when taken apart and hung on the wall, as a traveling paper-based exhibition.",
+        "descrip": "Strange Gifts takes the reader on a journey through various cities in New England. We explore the history and legacy of the region through a critical and humorous design lens, looking at the way issues of trade, money, and gender were all shaped by these small towns’ pasts. Our first person stories of traveling through these towns is mixed with the factual details we encounter on the way, making the past feel contemporary.</p><p>The 32-page publication can be read in two ways: as a newspaper, or, when taken apart and hung on the wall, as a traveling paper-based exhibition.",
         "hero": "Guez_Emily_01.png",
         "image2": "Guez_Emily_02.png",
         "image3": "Guez_Emily_03.png",
-        "image4": "<iframe src='https://player.vimeo.com/video/501327506' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+        "image4": "<iframe class='lazy' data-src='https://player.vimeo.com/video/501327506' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
         "image5": "Guez_Emily_05.png"
+    },
+
+    {
+        "name": "Everett Epstein",
+        "class": "2021",
+        "title": "The Discreet Life of the Emoji",
+        "descrip": "This website traces a single emoji backwards, through the screen, through its code, to the mines of the Atacama Desert. It offers a materialist critique of a symbol, exposing the mechanics behind a glyph.",
+        "hero": "epstein_everett_1.png",
+        "image2": "<iframe class='lazy' data-src='https://player.vimeo.com/video/502024622' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+        "link": "https://discreetemoji.glitch.me/"
     },
 
     {
@@ -54,7 +75,7 @@
         "title": "HYPERLAND",
         "descrip": "This four part video series traces the influence of historical events that link technology and political power in visual fiction speculation  about the future and how, in turn, the influence of these fictions has  subsequently manifested in the real world. Completing the continuous feedback loop these manifestations, now themselves part of the historical record, become fact and are the basis for the next iteration of the visual media’s speculation on the future. The series uses the original Disney theme parks to separate its content to cover four separate topics.",
         "hero": "Nolan_Georgie_01.jpg",
-        "image2": "<iframe src='https://player.vimeo.com/video/498270165' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+        "image2": "<iframe class='lazy' data-src='https://player.vimeo.com/video/498270165' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
     },
     {
         "name": "Ilhee Park",
@@ -62,15 +83,15 @@
         "title": "Visibility",
         "descrip": "Visibility was created in a 2020 Graduate Type 3 class. It is derived from the text ‘Six Memos for the Next Millennium’ by Italo Calvino. Inspired by the motion of wiping the window, I created a conceptual image using multiple layers of typography that looks blurry outside the window.",
         "hero": "Park_Ilhee_01.jpg",
-        "image2": "<iframe src='https://player.vimeo.com/video/501325184' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+        "image2": "<iframe class='lazy' data-src='https://player.vimeo.com/video/501325184' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
     },
     {
         "name": "Ingrid Schmaedecke",
         "class": "2022",
         "title": "El Lissitzky Essays on Type",
-        "descrip": "Double-book project for two essays by El Lissitzky, originally published in 1925.\nThe book features a red circle shared between pages to indicate which ones should be open together.\nEditorial project for Graduate Typography III, Fall 2020, at RISD, taught by Doug Scott.",
+        "descrip": "Double-book project for two essays by El Lissitzky, originally published in 1925. The book features a red circle shared between pages to indicate which ones should be open together.</p><p>Editorial project for Graduate Typography III, Fall 2020, at RISD, taught by Doug Scott.",
         "hero": "schmaedecke_ingrid_01.jpg",
-        "image2": "<iframe src='https://player.vimeo.com/video/495038574' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+        "image2": "<iframe class='lazy' data-src='https://player.vimeo.com/video/495038574' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
     },
     {
         "name": "Jenni Oughton",
@@ -87,11 +108,12 @@
         "name": "Kit Son Lee",
         "class": "2021",
         "title": "Phraktur Leet",
-        "descrip": "Phraktur Leet is a Fraktur (referring to its use by white nationalists) \nthat interpolates from Latin to Leet, a system of modified spellings \nfrequently found in gaming communities. The messy interpolation \nillustrates how the mainstream public couldn’t connect 2014's GamerGate \nand the Alt-Right, largely due to their harassment campaigns being \ncoordinated across fragmented channels. Even when the typeface is \n“clean” on either end, the Latin is a super display, and leet \northography is intentionally difficult to read, reflecting the \nillegibility of gamer and Alt-Right spaces to the general public.",
+        "descrip": "Phraktur Leet is a variable font that structurally connects gamer culture and white nationalism. Its Fraktur heritage refers to the use of Fraktur by the Alt-Right, while the interpolation axis transitions the Latin into Leet, a system of modified spellings frequently found in gaming communities.</p><p>The (intentionally) messy interpolation illustrates how the mainstream public couldn’t connect 2014's GamerGate with the rise of the Alt-Right, possibly because of the way the two movements' harassment campaigns were coordinated across fragmented and decentralized channels. And even when the typeface is “clean” on either end, the Latin is a super display, and leet orthography is intentionally difficult to read, reflecting the illegibility of gamer and Alt-Right spaces to the general public.",
         "hero": "Lee_KitSon_01.gif",
         "image2": "Lee_KitSon_02.gif",
-        "image3": "Lee_KitSon_03.jpg",
-        "image4": "Lee_KitSon_04.jpg"
+        "image3": "Lee_KitSon_04.jpg",
+        "image4": "Lee_KitSon_03.jpg",
+        "link": "http://phraktur-leet.glitch.me/"
     },
     {
         "name": "Lai Xu",
@@ -111,7 +133,7 @@
         "name": "Lizzie Baur",
         "class": "2020",
         "title": "Temporal Collisions",
-        "descrip": "MFA Thesis synthesizing a body of work produced over the course of the program. A mix of project documentation, research, writing and interview. This book articulates a methodology and affinity for confusion and noise, gleaning, getting lost, temporal collisions and play.\nBook Design, 2020 228 pages, 7.25 x 10 in.",
+        "descrip": "MFA Thesis synthesizing a body of work produced over the course of the program. A mix of project documentation, research, writing and interview. This book articulates a methodology and affinity for confusion and noise, gleaning, getting lost, temporal collisions and play.</p><p>Book Design, 2020 228 pages, 7.25 x 10 in.",
         "hero": "baur_lizzie_01.jpg",
         "image2": "baur_lizzie_02.jpg",
         "image3": "baur_lizzie_03.jpg",
@@ -156,18 +178,31 @@
         "title": "Conditional Design",
         "descrip": "As we all know, Chinese characters are transformed from graphics and we call them hieroglyphs. After thousands of years of historical precipitation, the Chinese have gradually formed its own system from early graphics. And in the whole system, the most important thing is the stroke.\nIn this project, we will create a brand-new Chinese character by using strokes as a starting point and through the strokes randomly selected by the audience, and find the balance in the structure through the creation process.",
         "hero": "ju_qiwen_01.jpg",
-        "image2": "<iframe src='https://player.vimeo.com/video/501327291' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+        "image2": "<iframe class='lazy' data-src='https://player.vimeo.com/video/501327291' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
     },
+
+    {
+        "name": "Romik Bose Mitra",
+        "class": "2021",
+        "title": "The Statue of [imp]unity",
+        "descrip": "The Statue of [imp]unity is a speculative memorial made to commemorate and memorialize the lives of the 2,500+ villagers whose lives were uprooted and destroyed by the Indian Government to build what is now the world's tallest statue in Gujarat, India - The Statue of Unity. I was fascinated by the scale of the project, and the absolute nonchalance displayed by the Government towards the lives that would be affected by the project. I created two speculative spaces, which I am now working to embed into a website for public access.",
+        "hero": "mitra_romikbose_01.jpg",
+        "image2": "mitra_romikbose_02.jpg",
+        "image3": "mitra_romikbose_03.jpg",
+        "image4": "<iframe class='lazy' data-src='https://player.vimeo.com/video/501772824' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+        "image5": "<iframe class='lazy' data-src='https://player.vimeo.com/video/501766646' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+    },
+
     {
         "name": "Ryan Diaz",
         "class": "2021",
         "title": "Slow Dance With Me",
         "descrip": "Slow Dance With Me is an installation, a series of videos, and long exposure photographs swirling around concepts of intimacy, delay, and release. Traditional slow dance songs play in a small, dark room staged with a disco ball, randomly interrupted with projected videos. The space encourages participants to reflect on their own experiences with intimacy and perhaps slow dance themselves. Touch, proximity, and swaying together interrupts the pace of life and our alienation from others. How can lingering contact encourage slowness in the face of perpetual loss? ",
         "hero": "diaz_ryan_04.jpg",
-        "image2": "<iframe src='https://player.vimeo.com/video/482197246' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+        "image2": "<iframe class='lazy' data-src='https://player.vimeo.com/video/482197246' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
         "image3": "diaz_ryan_02.jpg",
-        "image4": "<iframe src='https://player.vimeo.com/video/484941766' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
-        "image5": "<iframe src='https://player.vimeo.com/video/486217257' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+        "image4": "<iframe class='lazy' data-src='https://player.vimeo.com/video/484941766' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>",
+        "image5": "<iframe class='lazy' data-src='https://player.vimeo.com/video/486217257' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
     },
     {
         "name": "Yingxi Ji",
@@ -192,12 +227,12 @@
         "name": "Zengqi Guo",
         "class": "2022",
         "title": "Serendipity Re: to the Golden Record",
-        "descrip": "This project is an alien language that I imagined. The inspiration comes from how aliens will respond to The Golden Record. To explore more possibilities in contemporary typography, we need to extend the scope of design to a broader writing system. By getting rid of the existing letterforms' constraints, it is possible to extract some new forms as inspirations from the future or the places we never had a chance to know.\nTypeface designed in Grad Typography 1 in fall 2019 and video created in Design in Posthuman Age by Anastasiia Raina in fall 2020.",
+        "descrip": "This project is an alien language that I imagined. The inspiration comes from how aliens will respond to The Golden Record. To explore more possibilities in contemporary typography, we need to extend the scope of design to a broader writing system. By getting rid of the existing letterforms' constraints, it is possible to extract some new forms as inspirations from the future or the places we never had a chance to know.</p><p>Typeface designed in Grad Typography 1 in fall 2019 and video created in Design in Posthuman Age by Anastasiia Raina in fall 2020.",
         "hero": "guo_zengqi_01.jpg",
         "image2": "guo_zengqi_02.jpg",
         "image3": "guo_zengqi_03.jpg",
         "image4": "guo_zengqi_04.jpg",
-        "image5": "<iframe src='https://player.vimeo.com/video/482162664' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
+        "image5": "<iframe class='lazy' data-src='https://player.vimeo.com/video/482162664' frameborder='0' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe>"
     },
     {
         "name": "Zoë Pulley",

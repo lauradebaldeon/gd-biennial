@@ -1,3 +1,5 @@
+var ll = new LazyLoad();
+
 $.getJSON('everything.json', function(data) {
   let html = "";
 
@@ -28,7 +30,7 @@ $.getJSON('everything.json', function(data) {
         }
         if(!image.match(/^</)) {
           html += `<div class="work_image">
-          <img class="img" src="everything/${image}"/>
+          <img class="lazy" data-src="everything/${image}"/>
           </div>`
         } else {
           html+= `<div class="work_image video">
@@ -39,14 +41,16 @@ $.getJSON('everything.json', function(data) {
       html+= "</div></div></div></div>";
   });
 
+  html+= `<div class="grid_element blank"></div><div class="grid_element blank desk"></div><div class="grid_element blank desk"></div>`;
 
-  if(!data.length%4 == 0) {
-    for(j=0; j<4-(data.length%4); j++) {
-      html+= `<div class="grid_element blank"></div>`;
-    }
-  }
+  // if(!data.length%4 === 0) {
+  //   for(j=0; j<4-(data.length%4); j++) {
+  //     html+= `<div class="grid_element blank"></div>`;
+  //   }
+  // }
 
   $(".grid").append(html);
+  ll.update();
 
   let scrollTrack = [];
 
@@ -80,105 +84,95 @@ let dragCounter=0;
 let angleTrack = [];
 let insertHere = document.createDocumentFragment();
 
-// $.getJSON('test-n.json', function(data) {
-//     // let html = "";
-//     $.each(data, function(j, post){
-//       let calcWidth=95;
-//       let thisWidth=Math.floor(Math.random()*calcWidth);
-//       let calcHeight=100;
-//       let thisHeight=Math.floor(Math.random()*calcHeight);
-//       let randomAngle = Math.random() * 10;
-//       let randomControl = Math.random();
+$.getJSON('nothing.json', function(data) {
+    // let html = "";
+    $.each(data, function(j, post){
+      let calcWidth=95;
+      let thisWidth=Math.floor(Math.random()*calcWidth);
+      let calcHeight=800;
+      let thisHeight=Math.floor(Math.random()*calcHeight);
+      let randomAngle = Math.random() * 10;
+      let randomControl = Math.random();
  
-//       let picContainer = document.createElement("div");
-//       picContainer.id=j;
-//       picContainer.className = "nothing-images";
-//       let pic = document.createElement("div");
-//       pic.className = "nothing-front";
-//       pic.innerHTML = `<img src=nothing/${post.image}/>`;
+      let picContainer = document.createElement("div");
+      picContainer.id=j;
+      picContainer.className = "nothing-images";
+      let pic = document.createElement("div");
+      pic.className = "nothing-front";
+      pic.innerHTML = `<img class="img" src="nothing/${post.image}"/>`;
 
-//       picContainer.appendChild(pic);
+      picContainer.appendChild(pic);
 
-//       let cap = document.createElement("div");
-//       cap.className = "nothing-back";
-//       cap.innerHTML = `<p>${post.caption}</p>`;
+      let cap = document.createElement("div");
+      cap.className = "nothing-back";
+      cap.innerHTML = `<p>${post.caption}</p>`;
 
-//       picContainer.appendChild(cap);
+      picContainer.appendChild(cap);
 
-//       $(picContainer).css({
-//         "left":"" + thisWidth + "%","top":"" + thisHeight + "vh"
-//       });
-//       if (randomControl >0.5) {
-//         $(picContainer).css("transform", `rotate(${randomAngle}deg) rotateY(0deg)`);
-//         angleTrack.push(randomAngle);
-//       } else {
-//         $(picContainer).css("transform", `rotate(-${randomAngle}deg) rotateY(0deg)`);
-//         angleTrack.push(randomAngle);
-//       }
+      $(picContainer).css({
+        "left":"" + thisWidth + "%","top":"" + thisHeight + "vh"
+      });
+      if (randomControl >0.5) {
+        $(picContainer).css("transform", `rotate(${randomAngle}deg) rotateY(0deg)`);
+        angleTrack.push(randomAngle);
+      } else {
+        $(picContainer).css("transform", `rotate(-${randomAngle}deg) rotateY(0deg)`);
+        angleTrack.push(randomAngle);
+      }
 
-//       insertHere.appendChild(picContainer);
-//     });
+      insertHere.appendChild(picContainer);
+    });
 
-//   $("#nothing-container").append(insertHere);
+  $("#nothing-container").append(insertHere);
   
-//   $(".nothing-images").draggable({
-//     start: function() {
-//       dragCounter++;
-//       $(this).addClass("dragged").css({"z-index":""+dragCounter+""});
-//     }
-//   }).on("click", function() {
-//     if ( $(this).is('.ui-draggable-dragging') ) {
-//       return;
-//     }
-//     console.log("clicked");
-//     let thisIndex = $(this).attr("id");
+  $(".nothing-images").draggable({
+    start: function() {
+      dragCounter++;
+      $(this).addClass("dragged").css({"z-index":""+dragCounter+""});
+    }
+  }).on("click", function() {
+    dragCounter++;
+    $(this).addClass("dragged").css({"z-index":""+dragCounter+""});
 
-//     if(!$(this).hasClass("p") && !$(this).hasClass("c")) {
-//       $(this).addClass("p");
-//     }
+    if($(this).is(".ui-draggable-dragging")) {
+      return;
+    } else {
+      if(!$(this).find(".nothing-back").is(":visible") == true) {
+        $(this).find(".nothing-back").slideDown(300);
+      } else {
+        $(this).find(".nothing-back").slideUp(300);
+      }
+ 
+    }
 
-//     if($(this).hasClass("p")) {
-//       $(this).css("transform", `rotate(-${angleTrack[thisIndex]}deg) rotateY(180deg)`);
-//       $(this).removeClass("p");
-//       $(this).addClass("c");
-//     } else {
-//       console.log("clicking");
-//       $(this).css("transform", `rotate(${angleTrack[thisIndex]}deg) rotateY(0deg)`);
-//       $(this).removeClass("c");
-//       $(this).addClass("p");
-//     }
-//   });
+  })
+  
 
+}); //end JSON—nothing import and interactions
 
-  //click-flip interaction: won't work without container div bc these already have a transform applied
-  // $(".nothing-front, .nothing-back").click(function() {
-    // let thisIndex = $(this).closest(".nothing-images").attr("id");
-    // console.log(thisIndex);
-
-    // if($(this).hasClass("nothing-front")) {
-    //   console.log("front");
-    //   $(this).closest(".nothing-images").css("transform", `rotate(${angleTrack[thisIndex]}deg) rotateY(180deg)`);
-    // } else {
-    //   console.log("back");
-    //   $(this).closest(".nothing-images").css("transform", `rotate(${angleTrack[thisIndex]}deg) rotateY(0deg)`);
-    // }
-
-  // });
-
-// }); 
-//end JSON—nothing import and interactions
+var dragnavHeight, contentHeight, contentOffset;
+const mq = window.matchMedia("(max-width: 768px)");
 
 $(document).ready(function() {
 
+  if(mq.matches) {
+    dragnavHeight = $(".mobi-nav").height();
+    $(".desk").hide();
+    $(".mobi").show();
+  } else {
+    dragnavHeight = $(".desk-nav").height();
+    $(".mobi").hide();
+    $(".desk").show();
+  }
   //dynamic sizing of nav and footer areas
-  var dragnavHeight = $(".nav-svg").height();
-  $(".dragbox, .footer").height(dragnavHeight);
+  $(".dragbox, .footer, .nav-container").height(dragnavHeight);
 
   //dynamic sizing of content area to match nav, currently with 15px margin on either side
   var contentHeight = $(window).height()-(dragnavHeight*2)-35;
   $(".content").height(contentHeight);
   var contentOffset = $(".dragbox").height() + 15;
   $(".content").css("top", contentOffset);
+
 
  //change nav color on hover if not current section
  $(".e-svg").hover(function() {
@@ -199,15 +193,18 @@ $(document).ready(function() {
 
 //click navigation interaction——————————————————————
 $(".nav-nothing").click(function() {
+  $('.drawer').removeClass("opened");
   if(!$(".flip-card").hasClass("n")) {
     $(".dragbox").addClass("n");
     $(".flip-card").removeClass("e");
     $(".flip-card").addClass("n");
     $(".nav-svg").removeClass("hovering");
+    $(".nothing-back").hide();
   } 
 });
 
 $(".nav-everything").click(function() {
+  $('.drawer').removeClass("opened");
   if(!$(".flip-card").hasClass("e")) {
     $(".dragbox").removeClass("n");
     $(".flip-card").addClass("e");
@@ -220,30 +217,82 @@ $(".nav-everything").click(function() {
 
 });
 
+//mobi about/programming nav—————————————————
+$(".hamburger").click(function() {
+  $(".mobi.span").css("color", "#000");
+    if(!$(".flip-nav").hasClass("a_p")) {
+      $(".flip-nav").removeClass("risd_gd");
+      $(".flip-nav").addClass("a_p");
+    } else {
+      $(".flip-nav").removeClass("a_p");
+      $(".flip-nav").addClass("risd_gd");
+    }
+    $(".programming, .about").removeClass("opened");
+});
 
-//drawer pullout interaction
+//mobi drawer pullout——————————————
+$("#about").click(function() {
+  $(".mobi.span").css("color", "#000");
+    $(".programming").removeClass("opened");
+    if(!$(".about").hasClass("opened")) {
+      $(this).css("color", "#BAAAFE");
+      $(".about").addClass("opened");
+    } else {
+      $(this).css("color", "#000");
+      $(".about").removeClass("opened");
+    }
+    $(".pullout-content").animate({scrollTop: 0}, 300);
+});
+
+$("#programming").click(function() {
+  $(".mobi.span").css("color", "#000");
+  $(".about").removeClass("opened");
+  if(!$(".programming").hasClass("opened")) {
+    $(this).css("color", "#BAAAFE");
+    $(".programming").addClass("opened");
+  } else {
+    $(this).css("color", "#000");
+    $(".programming").removeClass("opened");
+  }
+  $(".pullout-content").animate({scrollTop: 0}, 300);
+})
+
+//desktop drawer pullout————————————
 $(".spine").click(function() {
   let thisPullout = $(this).closest(".drawer");
   if($(thisPullout).hasClass("opened")) {
     $(thisPullout).removeClass("opened");
   } else {
     $('.drawer').removeClass("opened");
+    $(".pullout-content").animate({scrollTop: 0}, 100);
     $(thisPullout).addClass("opened");
   }
 });
 
 
 
+
 }); //end document ready
 
 $(window).resize(function() {
-  dragnavHeight = $(".nav-everything").height();
-  $(".dragbox").height(dragnavHeight - dragnavHeight * 0.1);
-  contentHeight = $(window).height()-(dragnavHeight*2);
-  $(".content").height(contentHeight);
-  contentOffset = $(".dragbox").height() + 30;
-  $(".content").css("top", contentOffset);
 
+  if(mq.matches) {
+    dragnavHeight = $(".mobi-nav").height();
+    $(".desk").hide();
+    $(".mobi").show();
+  } else {
+    dragnavHeight = $(".desk-nav").height();
+    $(".mobi").hide();
+    $(".desk").show();
+  }
+  //dynamic sizing of nav and footer areas
+  $(".dragbox, .footer, .nav-container").height(dragnavHeight);
+
+  //dynamic sizing of content area to match nav, currently with 15px margin on either side
+  var contentHeight = $(window).height()-(dragnavHeight*2)-35;
+  $(".content").height(contentHeight);
+  var contentOffset = $(".dragbox").height() + 15;
+  $(".content").css("top", contentOffset);
 
 
     // counter++;

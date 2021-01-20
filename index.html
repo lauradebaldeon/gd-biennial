@@ -18,8 +18,9 @@
       integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
       crossorigin="anonymous"
     ></script>
-
-    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="dragnav">
@@ -27,17 +28,31 @@
       <div class="dragbox at-everything"></div>
 
       <!-- title text -->
-      <div class="nav-container">
+      <div class="nav-container desk">
         <div class="nav-block nav-everything">
-          <img class="nav-svg e-svg"
+          <img class="nav-svg desk-nav e-svg"
             src="assets/asset-e.svg"
           />
         </div>
         <div class="nav-block nav-nothing">
-          <img class="nav-svg n-svg"
+          <img class="nav-svg desk-nav n-svg"
             src="assets/asset-n.svg"
           />
         </div>
+      </div>
+
+      <!-- mobile nav -->
+      <div class="nav-container mobi">
+        <div class="nav-block nav-everything">
+          <img class="nav-svg mobi-nav e-svg" id="mobi-navi" src="assets/mobile-nav-e.svg"/>
+        </div>
+        <div class="nav-block nav-slash">
+          <img class="nav-svg mobi-nav" src="assets/mobile-nav-slash.svg"/>
+        </div>
+        <div class="nav-block nav-nothing">
+          <img class="nav-svg mobi-nav n-svg" src="assets/mobile-nav-n.svg"/>
+        </div>
+        
       </div>
     </div>
 
@@ -45,10 +60,9 @@
       <div class="flip-card e">
         <div class="content-inner content-everything">
           <div class="fullview close">⊗</div>
-          <div class="scroll fullview"><img class="scroll-graphic" src = "https://cdn.glitch.com/e0e4c9ce-d629-47c7-868a-8b47a17312a1%2FAsset%206.png?v=1605736695602">
+          <div class="scroll fullview desk"><img class="scroll-graphic" src = "https://cdn.glitch.com/e0e4c9ce-d629-47c7-868a-8b47a17312a1%2FAsset%206.png?v=1605736695602">
           </div>
           <div class="grid">
-
           </div>
         </div>
         <div class="content-inner content-nothing" id="nothing-content">
@@ -56,40 +70,119 @@
         </div>
       </div>
     </div>
-    
+
     <div class="drawer programming">
-      <div class="pullout">
+      <div class="spine desk">
         <div class="pullout-title" id="programming-title">
-          <h4>Programming</h4>
+          Programming
         </div>
       </div>
-      <div class="pullout-content"></div>
-      <div class="spine"></div>
+      <div class="pullout-content">
+        <h2>Schedule of Events</h2>
+        <div class="schedule">
+          <div class="event">
+            <h3>Jan. 21, 7PM EST</h3>
+            <p>Launch Event with Elaine Lopez</p>
+          </div>
+          <div class="e-descrip">
+            <p>Join us for the launch of the RISD GD MFA Biennial, titled "Everything You Can Think Of; Nothing You Want." This Zoom event will include mingling, an introduction to the website, a discussion with the curators, and a presentation by Elaine Lopez.</p>
+
+            <p>Elaine Lopez graduated from the RISD GD MFA program in 2019. She is an Associate Professor of Graphic Design at the Maryland Institute College of Art and an AICAD Fellow.</p>
+            <p><a href="https://www.eventbrite.com/e/risd-gd-mfa-biennial-2021-launch-event-tickets-137217502243" target="_blank">Register Here</a></p>
+          </div>
+          <div class="event">
+            <h3>Jan. 28, 7PM EST</h3>
+            <p>Tatiana Gómez Gaggero & José Menéndez</p>
+          </div>
+          <div class="e-descrip">
+            <p>Coming soon!</p>
+          </div>
+          <div class="event">
+            <h3>Jan. 30, 2PM EST</h3>
+            <p>Bobby Joe Smith III</p>
+          </div>
+          <div class="e-descrip">
+            <p>Coming soon!</p>
+          </div>
+          <div class="event">
+            <h3>Feb. 4–6, 10AM EST</h3>
+            <p>Federico Pérez Villoro & Chris Hamamoto</p>
+          </div>
+          <div class="e-descrip">
+            <p>Coming soon!</p>
+          </div>
+          <div class="event">
+            <h3>Feb. 10, 7PM EST</h3>
+            <p>Elizabeth Leeper </p>
+          </div>
+          <div class="e-descrip">
+            <p>Coming soon!</p>
+          </div>
+          <div class="event">
+            <h3>Feb. 11, 7PM EST</h3>
+            <p>Feeels Magazine</p>
+          </div>
+          <div class="e-descrip">
+            <p>Coming soon!</p>
+          </div>
+        </div>
+
+
+      </div>
     </div>
 
 
-    <div class="drawer info">
-      <div class="pullout">
-        <div class="pullout-title" id="info-title">
-          <h4>About</h4>
+    <div class="drawer about">
+      <div class="spine desk">
+        <div class="pullout-title" id="about-title">
+          About
         </div>
       </div>
-      <div class="spine"></div>
-      <div class="pullout-content"></div>
+      <div class="pullout-content">
+        <h2>Everything You Can Think Of; Nothing You Want</h2>
+        <p class="subhead">Overview</p>
+        <p>The theme for the 2020 graphic design biennial is “Everything You Can Think Of; Nothing You Want.”</p>
 
+        <p>“Everything You Can Think Of” and “Nothing You Want” correspond to two separate but related bodies of work—like two sides of a coin, informing one another—housed in one biennial. The show seeks to highlight the tension of a graduate-level practice: the professional and educational; individual and institutional; commercial and critical. Students can submit to both bodies of work.</p>
+        
+        <p class="subhead">Everything You Can Think Of</p>
+        <p>“Everything You Can Think Of” represents graphic design as a wide field. It speaks to the multimedia, multidisciplinary work produced by RISD students from their varied perspectives and modes of practice. “Everything” also invokes the program’s ambition and rigor. RISD students are constantly producing and publishing their knowledge and creative work; we are always making everything we can think of. “Everything” ought to be an imaginative and diverse show, flaunting the ingenuity and extensive skill of RISD graphic designers.</p>
+
+        <p>For “Everything”, each student is limited to one submission. The submission must have been included in your RISD application or produced for a RISD class or event. Submit work that you are proud to have created at RISD: work that is portfolioworthy, work RISD would want to share on social media, etc. Any format is acceptable (book, motion, web, etc.), but it must evidently be graphic design. You may include didactic text or other context.</p>
+
+        <p class="subhead">Nothing You Want</p>
+        <p>RISD values students’ productive capacity. However, many things important to wellness or daily living are not productive: rest, nourishment, social activity, child care, appointments, and self-care. “Nothing You Want” is critical of how the institution conceals and devalues what does not produce value in its name. “Nothing” seeks documentation of ‘unproductive’ things. Submissions might include performance, audio, writing, graphic design, objects, napping, truancy, crying, protest, theft—anything ‘worthless’ to the institution.</p>
+
+        <p>“Nothing” is a refusal: a rejection of the biennial format, of the expectation that students exhibit work so that RISD’s branding, recruiting, and rankings might benefit. “Nothing” asks us to reassess who a biennial ought to serve and what a biennial ought to contain. And further, “Nothing” speaks to a need to reexamine what the industry at large finds valuable. This show consequently also abdicates the task of curation, instead offering unlimited, unrestricted space for submissions. Ultimately, “Nothing You Want” reveals the cost of “Everything You Can Think Of.”</p>
+
+        <p>This shadow show is unlimited and uncurated. For “Nothing,” students can submit infinite items, produced at any time, in any format.</p>
+      </div>
     </div>
+
 
     <div class="footer">
-      <div class="f-section lockup">
+      <div class="f-section lockup desk">
         <img src="assets/asset-logo.svg">
       </div>
       <div class="f-section title">
-          <h4>RISD GD MFA Biennial 2021</h4>
+        <div class="mobi hamburger">
+          <h4 class="icon">&#x2630;</h4>
+        </div>
+        <div class="flip-nav">
+          <div class="flip-nav-inner risd-gd">
+            <h4>RISD GD MFA Biennial 2021</h4>
+          </div>
+          <div class="flip-nav-inner a_p">
+            <h4><span class="mobi span" id="about">About</span><span class="mobi flip-slash">/</span><span class="mobi span" id="programming">Programming</span></h4>
+          </div>
+        </div>
+
       </div>
-      <div class="f-section c">
+      <div class="f-section c desk">
           <h4>&copy;2021</h4>
       </div>
+    </div>
 
-</div>
+
   </body>
 </html>
