@@ -40,6 +40,7 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
+    -webkit-overflow-scrolling:touch;
 }
 
 /* ————————navigation styles————————— */
