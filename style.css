@@ -176,6 +176,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  overflow-y: scroll;
 }
 
 .grid_element {
@@ -208,8 +209,8 @@ body {
   border: none;
   cursor: default;
   touch-action: pan-down;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-
 }
 
 .grid_element.inactive {
@@ -236,6 +237,7 @@ body {
   transition: all 0.5s ease-in-out;
   touch-action: pan-down;
   -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
 }
 
 .hero {
