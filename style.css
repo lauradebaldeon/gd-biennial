@@ -698,7 +698,7 @@ h2 {
   .grid_element {
     max-width: 50%;
     flex: 1 0 50%;
-    height:45%;
+    height:auto;
   }
 
   .grid_element:nth-child(4n) {
