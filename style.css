@@ -625,11 +625,11 @@ h2 {
 @media screen and (max-device-width:768px), screen and (max-width:768px) {
 
   .grid_element.active {
-    max-width: 100%;
-    flex: 1 0 100%;
     height: max-content;
-    border: none;
-    cursor: default;
+  }
+
+  .work_container {
+    height: max-content;
   }
 
   .desk {
