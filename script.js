@@ -294,23 +294,14 @@ $(".spine").click(function() {
 
 let posCounter=0;
 
-$(".nav-container").click(function(){
-  posCounter=1;
-  if(posCounter=1){
-    $(".content-inner").css({"position":"absolute"});
-  }
-  console.log(posCounter);
-  setTimeout(expirePos,100);
-});
+// $(".nav-everything").click(function(){
+//   $(".content-inner").css({"position":"relative"});
+// });
 
+// $(".nav-nothing").click(function(){
+//   $(".content-inner").css({"position":"absolute"});
+// });
 
-function expirePos(){
-  posCounter=0;
-  if(posCounter=0){
-    $(".content-inner").css({"position":"relative"});
-    console.log(posCounter);
-  }
-}
 
 }); //end document ready
 
