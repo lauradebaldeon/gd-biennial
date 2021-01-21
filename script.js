@@ -292,7 +292,23 @@ $(".spine").click(function() {
 });
 
 
+let posCounter=0;
 
+$(".nav-container").click(function(){
+  posCounter=1;
+  if(posCounter=1){
+    $(".content-inner").css({"position":"absolute"});
+  }
+  setTimeout(expirePos,100);
+  if(posCounter=0){
+    $(".content-inner").css({"position":"relative"});
+  }
+});
+
+
+function expirePos(){
+  posCounter=0;
+}
 
 }); //end document ready
 

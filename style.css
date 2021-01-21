@@ -632,11 +632,11 @@ h2 {
 @media screen and (max-device-width:768px), screen and (max-width:768px) {
 
   .content-inner {
+    position: relative;
 }
 
   .grid {
     height:max-content;
-    position: relative;
   }
 
   .grid_element.active{
