@@ -301,15 +301,15 @@ $(".nav-container").click(function(){
   }
   console.log(posCounter);
   setTimeout(expirePos,100);
-  console.log(posCounter);
-  if(posCounter=0){
-    $(".content-inner").css({"position":"relative"});
-  }
 });
 
 
 function expirePos(){
   posCounter=0;
+  if(posCounter=0){
+    $(".content-inner").css({"position":"relative"});
+    console.log(posCounter);
+  }
 }
 
 }); //end document ready
