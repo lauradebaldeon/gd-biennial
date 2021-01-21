@@ -379,7 +379,6 @@ function intoView(){
 
 function dynamicSizing(){
 
-  if(isReady=1){
   if(mq.matches) {
     dragnavHeight = $(".mobi-nav").height();
     $(".desk").hide();
@@ -398,8 +397,7 @@ function dynamicSizing(){
   $(".content").height(contentHeight);
   var contentOffset = $(".dragbox").height() + 15;
   $(".content").css("top", contentOffset);
-} else {
-  $(".desk").hide();
-  $(".mobi").hide();
-}
-  }
+
+  console.log(contentOffset);
+
+} 
