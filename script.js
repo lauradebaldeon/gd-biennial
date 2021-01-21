@@ -82,12 +82,14 @@ $.getJSON('everything.json', function(data) {
     scrollTrack.splice(-1,1);
   });
 
+isReady=0;
+
 });
 
 }
 
 //end JSON-everything import and interactions
-
+let isReady=0;
 let counter=0;
 let dragCounter=0;
 let angleTrack = [];
@@ -157,6 +159,8 @@ $.getJSON('nothing.json', function(data) {
  
     }
 
+    isReady=1;
+
   })
   
 
@@ -169,26 +173,10 @@ const mq = window.matchMedia("(max-width: 768px)");
 $(document).ready(function() {
 
   loadEverything();
+
   loadNothing();
 
-  if(mq.matches) {
-    dragnavHeight = $(".mobi-nav").height();
-    $(".desk").hide();
-    $(".mobi").show();
-  } else {
-    dragnavHeight = $(".desk-nav").height();
-    $(".mobi").hide();
-    $(".desk").show();
-  }
-
-  //dynamic sizing of nav and footer areas
-  $(".dragbox, .footer, .nav-container").height(dragnavHeight);
-
-  //dynamic sizing of content area to match nav, currently with 15px margin on either side
-  var contentHeight = $(window).height()-(dragnavHeight*2)-35;
-  $(".content").height(contentHeight);
-  var contentOffset = $(".dragbox").height() + 15;
-  $(".content").css("top", contentOffset);
+  dynamicSizing();
 
 
  //change nav color on hover if not current section
@@ -390,4 +378,28 @@ function intoView(){
 
 
 function dynamicSizing(){
+
+  if(isReady=1){
+  if(mq.matches) {
+    dragnavHeight = $(".mobi-nav").height();
+    $(".desk").hide();
+    $(".mobi").show();
+  } else {
+    dragnavHeight = $(".desk-nav").height();
+    $(".mobi").hide();
+    $(".desk").show();
+  }
+
+  //dynamic sizing of nav and footer areas
+  $(".dragbox, .footer, .nav-container").height(dragnavHeight);
+
+  //dynamic sizing of content area to match nav, currently with 15px margin on either side
+  var contentHeight = $(window).height()-(dragnavHeight*2)-35;
+  $(".content").height(contentHeight);
+  var contentOffset = $(".dragbox").height() + 15;
+  $(".content").css("top", contentOffset);
+} else {
+  $(".desk").hide();
+  $(".mobi").hide();
+}
   }
