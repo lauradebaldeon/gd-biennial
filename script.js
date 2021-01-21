@@ -3,7 +3,6 @@ var ll = new LazyLoad();
 function loadEverything(){
 
 $.getJSON('everything.json', function(data) {
-  $.ajaxSetup({async:false});
   let html = "";
 
   $.each(data, function(i, work){
@@ -97,7 +96,6 @@ let insertHere = document.createDocumentFragment();
 
 function loadNothing(){
 $.getJSON('nothing.json', function(data) {
-  $.ajaxSetup({async:false});
 
     // let html = "";
     $.each(data, function(j, post){
@@ -176,7 +174,26 @@ $(document).ready(function() {
 
   loadNothing();
 
-  dynamicSizing();
+  if(mq.matches) {
+    dragnavHeight = $(".mobi-nav").height();
+    $(".desk").hide();
+    $(".mobi").show();
+  } else {
+    dragnavHeight = $(".desk-nav").height();
+    $(".mobi").hide();
+    $(".desk").show();
+  }
+
+  //dynamic sizing of nav and footer areas
+  $(".dragbox, .footer, .nav-container").height(dragnavHeight);
+
+  //dynamic sizing of content area to match nav, currently with 15px margin on either side
+  var contentHeight = $(window).height()-(dragnavHeight*2)-35;
+  $(".content").height(contentHeight);
+  var contentOffset = $(".dragbox").height() + 15;
+  $(".content").css("top", contentOffset);
+
+  console.log(contentOffset);
 
 
  //change nav color on hover if not current section
@@ -379,25 +396,5 @@ function intoView(){
 
 function dynamicSizing(){
 
-  if(mq.matches) {
-    dragnavHeight = $(".mobi-nav").height();
-    $(".desk").hide();
-    $(".mobi").show();
-  } else {
-    dragnavHeight = $(".desk-nav").height();
-    $(".mobi").hide();
-    $(".desk").show();
-  }
-
-  //dynamic sizing of nav and footer areas
-  $(".dragbox, .footer, .nav-container").height(dragnavHeight);
-
-  //dynamic sizing of content area to match nav, currently with 15px margin on either side
-  var contentHeight = $(window).height()-(dragnavHeight*2)-35;
-  $(".content").height(contentHeight);
-  var contentOffset = $(".dragbox").height() + 15;
-  $(".content").css("top", contentOffset);
-
-  console.log(contentOffset);
 
 } 
