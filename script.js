@@ -168,12 +168,7 @@ $.getJSON('nothing.json', function(data) {
 var dragnavHeight, contentHeight, contentOffset;
 const mq = window.matchMedia("(max-width: 768px)");
 
-$(document).ready(function() {
-
-  loadEverything();
-
-  loadNothing();
-
+function dynamicSizing(){
   if(mq.matches) {
     dragnavHeight = $(".mobi-nav").height();
     $(".desk").hide();
@@ -194,7 +189,15 @@ $(document).ready(function() {
   $(".content").css("top", contentOffset);
 
   console.log(contentOffset);
+}
 
+loadEverything();
+loadNothing();
+
+$(document).ready(function() {
+
+
+dynamicSizing();
 
  //change nav color on hover if not current section
  $(".e-svg").hover(function() {
@@ -304,26 +307,29 @@ $(".nav-nothing").click(function(){
 
 }); //end document ready
 
+
 $(window).resize(function() {
 
-  if(mq.matches) {
-    dragnavHeight = $(".mobi-nav").height();
-    $(".desk").hide();
-    $(".mobi").show();
-  } else {
-    dragnavHeight = $(".desk-nav").height();
-    $(".mobi").hide();
-    $(".desk").show();
-  }
-  //dynamic sizing of nav and footer areas
-  $(".dragbox, .footer, .nav-container").height(dragnavHeight);
+  setTimeout(dynamicSizing,1000);
 
-  //dynamic sizing of content area to match nav, currently with 15px margin on either side
-  var contentHeight = $(window).height()-(dragnavHeight*2)-35;
-  $(".content").height(contentHeight);
-  var contentOffset = $(".dragbox").height() + 15;
-  $(".content").css("top", contentOffset);
 
+  // if(mq.matches) {
+  //   dragnavHeight = $(".mobi-nav").height();
+  //   $(".desk").hide();
+  //   $(".mobi").show();
+  // } else {
+  //   dragnavHeight = $(".desk-nav").height();
+  //   $(".mobi").hide();
+  //   $(".desk").show();
+  // }
+  // //dynamic sizing of nav and footer areas
+  // $(".dragbox, .footer, .nav-container").height(dragnavHeight);
+
+  // //dynamic sizing of content area to match nav, currently with 15px margin on either side
+  // var contentHeight = $(window).height()-(dragnavHeight*2)-35;
+  // $(".content").height(contentHeight);
+  // var contentOffset = $(".dragbox").height() + 15;
+  // $(".content").css("top", contentOffset);
 
     // counter++;
     // checkWidth(cWidth);
@@ -402,7 +408,3 @@ function intoView(){
 // });
 
 
-function dynamicSizing(){
-
-
-} 
