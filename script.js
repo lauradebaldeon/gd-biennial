@@ -1,6 +1,7 @@
 var ll = new LazyLoad();
 
 $.getJSON('everything.json', function(data) {
+  $.ajaxSetup({async:false});
   let html = "";
 
   $.each(data, function(i, work){
@@ -79,7 +80,6 @@ $.getJSON('everything.json', function(data) {
     scrollTrack.splice(-1,1);
   });
 
-  dynamicSizing();
 });  //end JSON-everything import and interactions
 
 let counter=0;
@@ -88,6 +88,8 @@ let angleTrack = [];
 let insertHere = document.createDocumentFragment();
 
 $.getJSON('nothing.json', function(data) {
+  $.ajaxSetup({async:false});
+
     // let html = "";
     $.each(data, function(j, post){
       let calcWidth=95;
@@ -158,7 +160,7 @@ const mq = window.matchMedia("(max-width: 768px)");
 
 $(document).ready(function() {
 
-
+dynamicSizing();
 
 
  //change nav color on hover if not current section
