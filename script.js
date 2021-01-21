@@ -292,7 +292,6 @@ $(".spine").click(function() {
 });
 
 
-let posCounter=0;
 
 // $(".nav-everything").click(function(){
 //   $(".content-inner").css({"position":"relative"});
