@@ -299,7 +299,9 @@ $(".nav-container").click(function(){
   if(posCounter=1){
     $(".content-inner").css({"position":"absolute"});
   }
+  console.log(posCounter);
   setTimeout(expirePos,100);
+  console.log(posCounter);
   if(posCounter=0){
     $(".content-inner").css({"position":"relative"});
   }
