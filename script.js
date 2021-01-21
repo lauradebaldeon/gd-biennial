@@ -293,13 +293,13 @@ $(".spine").click(function() {
 
 
 
-// $(".nav-everything").click(function(){
-//   $(".content-inner").css({"position":"relative"});
-// });
+$(".nav-everything").click(function(){
+  $(".content-inner").css({"position":"relative"});
+});
 
-// $(".nav-nothing").click(function(){
-//   $(".content-inner").css({"position":"absolute"});
-// });
+$(".nav-nothing").click(function(){
+  $(".content-inner").css({"position":"absolute"});
+});
 
 
 }); //end document ready
