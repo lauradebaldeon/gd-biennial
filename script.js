@@ -39,6 +39,7 @@ $.getJSON('everything.json', function(data) {
         }
       }
       html+= "</div></div></div></div>";
+
   });
 
   html+= `<div class="grid_element blank"></div><div class="grid_element blank desk"></div><div class="grid_element blank desk"></div>`;
@@ -68,6 +69,7 @@ $.getJSON('everything.json', function(data) {
         }, 400);
     }
 
+
   });
 
   //listener to close fullview
@@ -77,6 +79,7 @@ $.getJSON('everything.json', function(data) {
     scrollTrack.splice(-1,1);
   });
 
+  dynamicSizing();
 });  //end JSON-everything import and interactions
 
 let counter=0;
@@ -155,23 +158,7 @@ const mq = window.matchMedia("(max-width: 768px)");
 
 $(document).ready(function() {
 
-  if(mq.matches) {
-    dragnavHeight = $(".mobi-nav").height();
-    $(".desk").hide();
-    $(".mobi").show();
-  } else {
-    dragnavHeight = $(".desk-nav").height();
-    $(".mobi").hide();
-    $(".desk").show();
-  }
-  //dynamic sizing of nav and footer areas
-  $(".dragbox, .footer, .nav-container").height(dragnavHeight);
 
-  //dynamic sizing of content area to match nav, currently with 15px margin on either side
-  var contentHeight = $(window).height()-(dragnavHeight*2)-35;
-  $(".content").height(contentHeight);
-  var contentOffset = $(".dragbox").height() + 15;
-  $(".content").css("top", contentOffset);
 
 
  //change nav color on hover if not current section
@@ -370,3 +357,25 @@ function intoView(){
 //   }, 300);
 
 // });
+
+
+function dynamicSizing(){
+  if(mq.matches) {
+    dragnavHeight = $(".mobi-nav").height();
+    $(".desk").hide();
+    $(".mobi").show();
+  } else {
+    dragnavHeight = $(".desk-nav").height();
+    $(".mobi").hide();
+    $(".desk").show();
+  }
+
+  //dynamic sizing of nav and footer areas
+  $(".dragbox, .footer, .nav-container").height(dragnavHeight);
+
+  //dynamic sizing of content area to match nav, currently with 15px margin on either side
+  var contentHeight = $(window).height()-(dragnavHeight*2)-35;
+  $(".content").height(contentHeight);
+  var contentOffset = $(".dragbox").height() + 15;
+  $(".content").css("top", contentOffset);
+  }
