@@ -309,31 +309,32 @@ $(".nav-nothing").click(function(){
 
 
 $(window).resize(function() {
+dynamicMobile();
+  // setTimeout(dynamicSizing,500);
 
-  setTimeout(dynamicSizing,1000);
 
-
-  // if(mq.matches) {
-  //   dragnavHeight = $(".mobi-nav").height();
-  //   $(".desk").hide();
-  //   $(".mobi").show();
-  // } else {
-  //   dragnavHeight = $(".desk-nav").height();
-  //   $(".mobi").hide();
-  //   $(".desk").show();
-  // }
-  // //dynamic sizing of nav and footer areas
-  // $(".dragbox, .footer, .nav-container").height(dragnavHeight);
-
-  // //dynamic sizing of content area to match nav, currently with 15px margin on either side
-  // var contentHeight = $(window).height()-(dragnavHeight*2)-35;
-  // $(".content").height(contentHeight);
-  // var contentOffset = $(".dragbox").height() + 15;
-  // $(".content").css("top", contentOffset);
-
-    // counter++;
-    // checkWidth(cWidth);
 });
+
+function dynamicMobile(){
+  if(mq.matches) {
+    dragnavHeight = $(".mobi-nav").height();
+    $(".desk").hide();
+    $(".mobi").show();
+  } else {
+    dragnavHeight = $(".desk-nav").height();
+    $(".mobi").hide();
+    $(".desk").show();
+  }
+  //dynamic sizing of nav and footer areas
+  $(".dragbox, .footer, .nav-container").height(dragnavHeight);
+
+  //dynamic sizing of content area to match nav, currently with 15px margin on either side
+  var contentHeight = $(window).height()-(dragnavHeight*2)-35;
+  $(".content").height(contentHeight);
+  var contentOffset = $(".dragbox").height() + 15;
+  $(".content").css("top", contentOffset);
+
+}
 
 function openElement(that) {
     $(".grid_element").removeClass("active");    
